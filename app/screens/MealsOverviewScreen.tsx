@@ -45,7 +45,7 @@ const MealsOverviewScreen: React.FC<navigationProps> = ({
     <View style={styles.container}>
       <FlatList
         data={displayedMeals}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item) => item.id ?? "1"}
         renderItem={renderMealItem}
       />
     </View>

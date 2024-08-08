@@ -5,4 +5,6 @@ export type mealItemTypes = {
   duration: number;
   affordability: string;
   complexity: string;
+  style?: any;
+  textStyle?: any;
 };
