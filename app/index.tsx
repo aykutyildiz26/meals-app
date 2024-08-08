@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet } from "react-native";
+import { StyleSheet, Button } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
@@ -35,7 +35,9 @@ export default function Index() {
             name="MealDetail"
             component={MealDetailScreen}
             options={{
-              title: "Detail",
+              headerRight: () => {
+                return <Button title="Tap me !!!" onPress={() => {}} />;
+              },
             }}
           />
         </Stack.Navigator>
