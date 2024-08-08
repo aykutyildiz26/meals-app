@@ -1,7 +1,10 @@
 import { RouteProp } from "@react-navigation/native";
 
 type RootStackParamList = {
-  Categories: { categoryId: string };
+  Categories: {
+    categoryId: string;
+    mealId: string;
+  };
 };
 
 export type CategoriesScreenRouteProp = RouteProp<
